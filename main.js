@@ -20,3 +20,15 @@ function repeat(i = 0) {
 }
 
 repeat();
+
+function factorial(x) {
+  if (x === 1) {
+    return x;
+  } else if (x === 0) {
+    return "введите число от 1";
+  } else {
+    return x * factorial(x - 1);
+  }
+}
+
+console.log(`${factorial(20)} факториалом числа 20`);
